@@ -1,0 +1,33 @@
+# Nama Toko
+print("======================================")
+print('      Selamat Datang Dipizza Hut      ')
+print("======================================")
+
+# Daftar Menu dan harga
+print("""\n==============Pizza Menu==============
+-------------------------------------
+|No|     Nama Makanan    |Harga      |
+-------------------------------------
+|1 |Frankfurter BBQ      |Rp 43.000  |
+|2 |Meat Monsta          |Rp 43.000  |
+|3 |Super Supreme        |Rp 43.000  |
+|4 |Super Supreme Chicken|Rp 43.000  |
+      """)
+# Input
+pesan_pizza = int(input("\nPilih jenis pizza [1/2/3/4/]: ").lower())
+
+if pesan_pizza == 1:
+    menu_pizza = "Pizza frankfurter"
+    harga_pizza = 43000
+elif pesan_pizza == 2:
+    menu_pizza = "Meat Monsta"
+    harga_pizza = 43000
+elif pesan_pizza == 3:
+    menu_pizza = "Super Supreme"
+    harga_pizza = 43000
+elif pesan_pizza == 4:
+    menu_pizza = "Pizza super supreme chicken"
+    harga_pizza = 43000
+else:
+    print("Pilihan tidak valid.")
+    exit()
