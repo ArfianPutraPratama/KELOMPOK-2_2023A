@@ -31,3 +31,37 @@ elif pesan_pizza == 4:
 else:
     print("Pilihan tidak valid.")
     exit()
+
+# Daftar Menu Crust
+print("""\n=============Crust Pizza=============
+-------------------------------------------
+|No|        Nama Makanan       |Harga     |
+-------------------------------------------
+|1 |Original                   |Rp Free   |
+|2 |Pan                        |Rp 3.000  |
+|3 |Cheesy Bite Crust          |Rp 5.000  |
+|4 |Chilli Cheesy Stuffed Crust|Rp 7.000  |
+|5 |Stuffed Crust              |Rp 10.000 |
+      """)
+#Input Crust Pizza
+crust_pizza = int(input("\nTambahkan topping [1/2/3/4/5]: ").lower())
+
+# Biaya topping
+if crust_pizza == 1:
+    pesan_crust = "original"
+    harga_crust = 0
+elif crust_pizza == 2:
+    pesan_crust = "pan"
+    harga_crust = 3000
+elif crust_pizza == 3:
+    pesan_crust = "cheesy bite crust"
+    harga_crust = 5000
+elif crust_pizza == 4:
+    pesan_crust = "chilli cheesy stuffed crust"
+    harga_crust = 7000
+elif crust_pizza == 5:
+    pesan_crust = "stuffed crust"
+    harga_crust = 10000
+else:
+    print("Jenis Crust tidak valid.")
+    exit()
