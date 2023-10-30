@@ -113,3 +113,35 @@ else:
      |3 |Large           |Rp 32.000 |
       """)
     ukuran_pizza = int(input("\nPilih ukuran pizza [1/2/3]: ").lower())
+# Biaya ukuran pizza
+if ukuran_pizza == 1:
+    ukuran = "small"
+    ukuran_price = 43000
+elif ukuran_pizza == 2:
+    ukuran = "medium"
+    ukuran_price = 57000
+elif ukuran_pizza == 3:
+    ukuran = "large"
+    ukuran_price = 32000
+else:
+    print("Ukuran pizza tidak valid.")
+    exit()
+
+nambah_keju = (input("Tambah 13000 untuk Extra Keju (y/n): ")).lower() == "y"
+
+# Biaya tambahan keju
+harga_keju = 13000 if nambah_keju else 0
+
+# Total biaya
+total_cost = harga_pizza + harga_crust + ukuran_price + harga_keju
+
+# Menampilkan pesanan dan total biaya
+print('\n==============================================================')
+print('             Thank you for choosing Pizza Hut Delivery          ')
+print('\n==============================================================')
+print("struk Pesanan Anda")
+print(f"Pizza               : {menu_pizza}")
+print(f"Crust               : {pesan_crust}")
+print(f"Ukuran              : {ukuran}")
+print(f"Tambahan keju       : {nambah_keju}")
+print(f"Harga Total         : {total_cost}")
