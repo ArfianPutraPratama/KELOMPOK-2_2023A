@@ -65,3 +65,51 @@ elif crust_pizza == 5:
 else:
     print("Jenis Crust tidak valid.")
     exit()
+
+# Membedakan Ukuran Dan Menu Ukuran Pizza
+if pesan_pizza == "frankfurter bbq":
+     print("""\n==============Ukuran Pizza==============
+     --------------------------------
+     |No| Ukuran Makanan |Harga     |
+     --------------------------------
+     |1 |Small           |Rp 43.000  |
+     |2 |Medium          |Rp 57.000  |
+      """)
+     ukuran_pizza = int(input("\nPilih ukuran pizza : ").lower())
+     if ukuran_pizza not in ["small", "medium"]:
+        print("Ukuran pizza tidak valid.")
+        exit()
+elif pesan_pizza == "meat monsta":
+    print("""\n==============Ukuran Pizza==============
+     --------------------------------
+     |No| Ukuran Makanan |Harga     |
+     --------------------------------
+     |1 |Small           |Rp 43.000  |
+     |2 |Large           |Rp 32.000 |
+      """)
+    ukuran_pizza = int(input("\nPilih ukuran pizza : ").lower())
+    if ukuran_pizza not in ["small", "large"]:
+        print("Ukuran pizza tidak valid.")
+        exit()
+elif pesan_pizza == "super supreme chicken":
+    print("""\n==============Ukuran Pizza==============
+     --------------------------------
+     |No| Ukuran Makanan |Harga     |
+     --------------------------------
+     |1 |Medium          |Rp 57.000  |
+     |2 |Large           |Rp 32.000 |
+      """)
+    ukuran_pizza = int(input("\nPilih ukuran pizza : ").lower())
+    if ukuran_pizza not in ["medium", "large"]:
+        print("Ukuran pizza tidak valid.")
+        exit()
+else:
+    print("""\n==============Ukuran Pizza==============
+     --------------------------------
+     |No| Ukuran Makanan |Harga     |
+     --------------------------------
+     |1 |Small           |Rp 43.000  |
+     |2 |Medium          |Rp 57.000  |
+     |3 |Large           |Rp 32.000 |
+      """)
+    ukuran_pizza = int(input("\nPilih ukuran pizza [1/2/3]: ").lower())
